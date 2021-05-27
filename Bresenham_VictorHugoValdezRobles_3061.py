@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
-    
+
 def Bresenham(x1, y1, x2, y2, color1):
     dx = abs(x2 - x1)
     dy = abs(y2 - y1)
     p = 2*dy - dx
-
     x = x1
-    y = y1
+    y = y1    
+    print("x  "+" y")
     
     for i in range(x, x2):
         plt.plot(round(x),round(y), color1)
@@ -27,10 +27,7 @@ def main():
     x2 = int(input("Ingresa  X2: "))
     y2 = int(input("Ingresa  Y2: "))
     color1 = "r."
-    
-    
     Bresenham(x1, y1, x2, y2, color1)
-
 
 if __name__ == '__main__':
     main()
